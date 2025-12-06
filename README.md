@@ -6,7 +6,7 @@
   <li><b>Форма регистрации</b> — позволяет пользователю создать аккаунт</li>
   <li><b>Форма входа</b> — после авторизации отображает информацию о пользователе в отдельном блоке.</li>
 </ul>
-<p>Вы можете протестировать проект здесь: <a href=""><img alt="Static Badge" src="https://img.shields.io/badge/Click!-%20red"></a>
+<p>Вы можете протестировать проект здесь: <a href="https://palamarnazar.github.io/Form_validation_project-/"><img alt="Static Badge" src="https://img.shields.io/badge/Click!-%20red"></a>
 </p>
 <h2>Используемые технологии</h2>
 <ul>
