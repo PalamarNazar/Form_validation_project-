@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="#">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/reset.css">
+    <script src="index.js" defer></script>
+    <title>practicJS</title>
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <div class="container">
+                <h1 class="header__title">User forms</h1>
+            </div>      
+        </header>
+        <main class="main">
+            <div class="container">
+                <div class="form__inner">
+                    <form class="main__form" data-user-form novalidate>
+                        <h2>Sign In</h2>
+                        <div class="form__field form__field-name">
+                            <label for="user-name">User name</label>
+                            <input 
+                            type="text" 
+                            id="user-name" 
+                            placeholder="Your name." 
+                            name="username"
+                            minlength="3"
+                            maxlength="12"
+                            pattern="^\S+$"
+                            required>
+                            <span class="form-field-error" data-error-field></span>
+                        </div>
+                        <div class="form__field form__field-password">
+                            <label for="user-password">Password</label>
+                            <input 
+                            type="password" 
+                            id="user-password" 
+                            placeholder="Your password." 
+                            name="userpassword"
+                            minlength="8"
+                            maxlength="16"
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*_])[a-zA-Z0-9!@#$%^&*_]{8,12}$"
+                            required>
+                            <span class="form-field-error" data-error-field></span>
+                        </div>
+                        <div class="form__field form__field-about">
+                            <label for="user-about">About you</label>
+                            <textarea
+                            name="userabout" 
+                            id="user-about" 
+                            placeholder="Write about you..."
+                            maxlength="120"
+                            ></textarea>
+                        </div>
+                        <fieldset 
+                        class="form__field-gender">
+                        <legend>Gender</legend>
+                            <input type="radio" 
+                            id="gender-male" 
+                            name="user-gender"
+                            value="male"
+                            required
+                            >
+                            <label for="gender-male">Male</label>
+                            <input type="radio" 
+                            id="gender-female" 
+                            name="user-gender"
+                            value="female"
+                            required
+                            >
+                            <label for="gender-female">Female</label>
+                            <span class="form-field-error" data-error-field></span>
+                        </fieldset>
+                        <div class="form__field-privacy">
+                            <input 
+                            type="checkbox" 
+                            id="user-privacy"  
+                            name="userprivacy"
+                            required>
+                            <label for="user-privacy">You read all ... and you aproved this.</label>
+                            <span class="form-field-error" data-error-field></span>
+                        </div>
+                        <button class="main__form-button" type="submit">Next</button>
+                    </form>
+                    <form class="form__info-get" data-info-form novalidate>
+                        <h2>Login</h2>
+                        <div class="info__field info__user-name">
+                            <label for="get-user-name">User name</label>
+                            <input type="text" 
+                            id="get-user-name" 
+                            name="getusername" 
+                            placeholder="Write your name."
+                            minlength="3"
+                            maxlength="20"
+                            required>
+                            <span class="info__field-error" data-info-error></span>
+                        </div>
+                        <div class="info__field info__user-password">
+                            <label for="get-user-password">User password</label>
+                            <input type="text" 
+                            id="get-user-password" 
+                            name="getuserpassword" 
+                            pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[!@#$%^&*_])[a-zA-Z0-9!@#$%^&*_]{8,12}$"
+                            minlength="8"
+                            maxlength="16"
+                            placeholder="Write your password."
+                            required>
+                            <span class="info__field-error" data-info-error></span>
+                        </div>
+                        <button type="submit" class="info__button">Continue</button>
+                    </form>
+                    <div class="form__get-info"></div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

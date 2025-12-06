@@ -1,0 +1,125 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: blanchedalmond;
+}
+h2 {
+    margin: 0px;
+}
+legend,
+label {
+    font-weight: 500;
+}
+legend {
+    padding: 0px 5px;
+}
+.wrapper {
+    width: 100%;
+    height: auto;
+}
+.container {
+    max-width: 1480px;
+    height: auto;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+.header {
+    padding-bottom: 20px;
+}
+.header__title {
+    text-align: center;
+    font-size: 40px;
+}
+.main {
+    padding-bottom: 20px;
+}
+.form__inner {
+    display: grid;
+    justify-content: center;
+    grid-template: repeat(2, 1fr) / repeat(2, 300px);
+    align-items: start;
+    gap: 10px;
+}
+.main__form {
+    grid-area: 1 / 1 / 3 / 2;
+}
+.form__get-info:not(:empty),
+.form__info-get,
+.main__form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 40%;
+    min-width: 300px;
+    gap: 20px;
+    border: 7px solid burlywood;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0px 0px 70px 0px #00000096;
+    font-size: clamp(0.5rem, 2.5vw, 1rem);
+}
+.info__field,
+.form__field {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.info__field input,
+.form__field input,textarea { 
+    border: 2px solid gray;
+    min-width: 250px;
+    max-width: 100%;
+    border-radius: 10px;
+    padding: 5px 10px;
+}
+.form__field-about textarea {
+    height: 100px;
+    resize: none;
+}
+.form__field-gender {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    flex-wrap: wrap;
+    border: 3px solid rgba(0, 0, 0, 0.439);
+    padding: 10px 20px;
+    margin-bottom: 30px;
+}
+.form__field-privacy {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 300px;
+}
+.form__field-gender span,
+.form__field-privacy span {
+    flex-basis: 100%;
+}
+.form__info-get {
+    grid-area: 1 / 2 / 2 / 3;
+}
+.form__get-info:not(:empty) {
+    text-align: center;
+    font-size: clamp(0.5rem, 2vw, 1.5rem);
+    height: fit-content;
+    grid-area: 2 / 2 / 3 / 3;
+}
+.form__get-info:not(:empty)>p {
+    text-wrap: wrap;
+    overflow: hidden;
+    overflow-wrap:  break-word;
+    max-width: 300px;
+}
+
+.info__field-error:not(:empty),
+.form-field-error:not(:empty) {
+    color:red;
+    font-size: clamp(0.5rem, 2vw, 0.8rem);
+    letter-spacing: 1px;
+}
+
+@media (max-width: 900px) {
+    .form__inner {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
