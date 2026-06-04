@@ -1,27 +1,26 @@
 <div>
-  <h1>Валидация форм с выводом данных пользователя</h1>
+  <h1>Validating forms with user data output</h1>
   
-  <p>Проект представляет работу с данными и браузерной памятью. Изначально он был реалезован через JSON-SERVER с npm.</p>
+  <p>The project focuses on working with data and browser memory. It was initially implemented using JSON-SERVER with npm.</p>
 </div>
 
 <div>
   <p>
-    Этот проект содержит две формы:
+    This project contains two forms:
   </p>
   <ul>
-    <li><b>Форма регистрации</b> — позволяет пользователю создать аккаунт</li>
-    <li><b>Форма входа</b> — после авторизации отображает информацию о пользователе в отдельном блоке.</li>
+   <li><b>Registration Form</b> - allows the user to create an account</li>
+   <li><b>Login form</b> - after authorization, displays user information in a separate block.</li>
   </ul>
 </div>
 
 <div>
-  <h2>Демо</h2>
-    
-  <p>Вы можете протестировать проект здесь: <a href="https://palamarnazar.github.io/Form_validation_project-/"><img alt="Static Badge" src="https://img.shields.io/badge/Click!-%20red"></a></p>
+  <h2>Demo</h2>
+  <p>You can test the project here: <a href="https://palamarnazar.github.io/Form_validation_project-/"><img alt="Static Badge" src="https://img.shields.io/badge/Click!-%20red"></a></p>
 </div>
 
 <div>
-  <h2>Используемые технологии</h2>
+  <h2>Technologies used</h2>
   <ul>
     <li>HTML<img src="https://kinsta.com/wp-content/uploads/2021/03/HTML-5-Badge-Logo.png" style="width: 40px;" /></li>
     <li>CSS <img src="https://sharpminds.com/wp-content/uploads/2025/10/css-technology-logo.svg" style="width: 30px;" /></li>
